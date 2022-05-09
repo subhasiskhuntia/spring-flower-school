@@ -1,0 +1,36 @@
+<!-- <app-header></app-header> -->
+<div class="loginForm">
+<form #loginRef="ngForm" (ngSubmit)="login(loginRef)">
+    <h3>Login Here</h3>
+    <label for="username">UserName</label>
+    <br>
+    <input type="email" name="userName" id="username" ngModel required placeholder="Email or Phone">
+    <br>
+    <div *ngIf="loginRef.controls['userName'].invalid && (loginRef.controls['userName'].dirty || loginRef.controls['userName'].touched)">
+        <span style="text-align:center;color: red; font-size: 10px;">Username Required</span>
+    </div>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" name="password" id="password" placeholder="Password" ngModel minlength="5" required >
+    <br>
+    <div *ngIf="loginRef.controls['password'].invalid && (loginRef.controls['password'].dirty || loginRef.controls['password'].touched)">
+        <span style="text-align:center; color: red; font-size: 10px;" *ngIf="loginRef.controls['password'].errors?.['required']">Password Required</span>
+
+        <span style="text-align:center;color: red; font-size: 10px;" *ngIf="loginRef.controls['password'].errors?.['minlength']">password must be at least 5 character</span>
+        <!-- pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$" -->
+        <!-- <span style="color: red;" *ngIf="loginRef.controls['password'].errors?.['pattern']">Password Must contain at least one upper case one lower case one special character</span>  -->
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Login" [disabled]="loginRef.invalid">
+    
+        <h6 [ngClass]="color ? 'class1':'class2' ">{{msg}}</h6>
+        <div class="signin">
+
+            <a routerLink="/signin">Sign in</a>
+        </div>
+</form>
+
+
+
+</div>

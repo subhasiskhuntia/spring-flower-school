@@ -1,0 +1,9 @@
+<input type="button" value="Click It" (click)="display()">
+
+<h2>Time Table Data</h2>
+<div *ngFor="let timetable of timeTableData">
+    <div>{{timetable.id}}</div>
+    <div>{{timetable.Period}}</div>
+    <div>{{timetable.Day}}</div>
+    <div>{{timetable.Subject}}</div>
+</div>

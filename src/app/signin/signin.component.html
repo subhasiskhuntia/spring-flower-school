@@ -1,0 +1,33 @@
+<!-- <app-header></app-header> -->
+<form [formGroup]="signinForm" (ngSubmit)="saveUser()">
+    <h3>SignIn Here</h3>
+    <label for="Id">Id</label>
+    
+    <input type="number" name="id" id="id" formControlName="id">
+    
+    <label for="name">Name<span *ngIf="signinForm.controls['name'].invalid" style="color: red; font-size: 20px;">*</span></label>
+    
+    <input type="text" name="name" id="name" formControlName="name" required>
+    
+    <label for="password">password<span *ngIf="signinForm.controls['password'].invalid" style="color: red; font-size: 20px;">*</span></label>
+    
+    <input type="password" name="password" id="password" formControlName="password" minlength="5" required>
+    <p style="color: red; font-size: 10px;" *ngIf="signinForm.controls['password'].errors?.['minlength']">
+        Password must be of at least 5 character 
+    </p>
+    <label for="motherName">Mother's name</label>
+    
+    <input type="text" name="motherName" id="motherName" formControlName="motherName">
+    
+    <label for="phone">Phone<span *ngIf="signinForm.controls['phone'].invalid" style="color: red; font-size: 20px;">*</span></label>
+    
+    <input type="text" formControlName="phone" required>
+    
+    <label for="adress">Address<span *ngIf="signinForm.controls['address'].invalid" style="color: red; font-size: 20px;">*</span></label>
+    
+    <input type="text" name="address" id="address" formControlName="address" required>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Submit" id="submit" [disabled]="signinForm.invalid" >
+</form>

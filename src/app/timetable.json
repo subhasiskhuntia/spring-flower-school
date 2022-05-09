@@ -1,0 +1,62 @@
+{
+  "TimeTable": [
+    {
+      "id": 1,
+      "Period": 1,
+      "Day": "Monday",
+      "Subject": "Maths"
+    },
+    {
+      "id": 2,
+      "Period": 2,
+      "Day": "Monday",
+      "Subject": "GK"
+    }
+  ],
+  "Activities": [
+    {
+      "id": 1,
+      "activity": "Create Project File",
+      "subject": "Maths"
+    },
+    {
+      "id": 2,
+      "activity": "Create periodic table",
+      "subject": "Maths"
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "Name": "Deepak Sharma",
+      "Password": "SR2045",
+      "Mother Name": "Mrs Radha Sharma",
+      "phone": "9898998877",
+      "Address": "52 bhola ganj New Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Subhasis Khuntia",
+      "password": "1215",
+      "motherName": "5555",
+      "phone": 739144875,
+      "address": "At/po-Taradapada , Jagatsinghpur, Odisha"
+    },
+    {
+      "id": 3,
+      "name": "Subhasis Khuntia",
+      "password": "55555",
+      "motherName": null,
+      "phone": "+917381779419",
+      "address": "At/po-Taradapada , Jagatsinghpur, Odisha"
+    },
+    {
+      "id": 12,
+      "name": "Asit Kumar Sabat",
+      "password": "123456",
+      "motherName": "Sabat's mom",
+      "phone": "555555555111",
+      "address": "Barhampur"
+    }
+  ]
+}

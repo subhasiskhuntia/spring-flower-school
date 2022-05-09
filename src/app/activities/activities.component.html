@@ -1,0 +1,23 @@
+
+<!-- <app-header></app-header> -->
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+
+    <table class="styled-table">
+        <thead>
+
+        <tr>
+            <th>Id</th>
+            <th>Subject</th>
+            <th>Activity</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let activity of activities">
+            <td>{{activity.id}}</td>
+            <td>{{activity.subject}}</td>
+            <td>{{activity.activity}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
