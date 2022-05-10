@@ -8,8 +8,9 @@ import { Users } from './users';
 export class SigninService {
 
   constructor(private http:HttpClient) { }
-  saveUser(user:Users){
-    console.log(user);
+  saveUser(tempUser:any){
+    console.log(tempUser);
+    let user=new Users(tempUser.id,tempUser.name,tempUser.password,tempUser.phone,tempUser.address,tempUser.mothersName)
     this.http.post("http://localhost:3000/Users",user).subscribe(result=>console.log(result),error=>console.log(error),()=>console.log("done"))
   }
 }

@@ -39,3 +39,11 @@ a{
     justify-content: center;
     align-items: center;
 }
+.welcomeMessage{
+    display: flex;
+    flex-direction: column;
+    font-family:'Poppins',sans-serif ;
+    justify-content: center;
+    align-items: center;
+    margin:0px 15px;
+}

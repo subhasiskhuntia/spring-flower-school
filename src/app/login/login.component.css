@@ -102,7 +102,7 @@ input[disabled]{
 }
 
 .class1{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 42px;
     text-align: center;
@@ -112,7 +112,7 @@ input[disabled]{
 }
 .class2 {
     color: red !important;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 42px;
     text-align: center;

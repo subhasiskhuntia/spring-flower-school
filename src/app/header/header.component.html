@@ -1,8 +1,15 @@
 <div class="header">
     <img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" alt="Logo" height="30px" id="image">
     <!-- <h1 id="title">Spring Flower School</h1> -->
-    <div>Welcome {{userName}}</div>
     <div id="links">
+      <div class="welcomeMessage">
+        <span>
+          Welcome
+        </span>
+        <span>
+          {{userName}}
+        </span>
+      </div>
       <a routerLink="/login">Login</a>
       <a routerLink="/profile">Profile</a>
       <a routerLink="/timetable">TimeTable</a>

@@ -57,6 +57,13 @@
       "motherName": "Sabat's mom",
       "phone": "555555555111",
       "address": "Barhampur"
+    },
+    {
+      "id": 20,
+      "Name": "Subhasis Khuntia",
+      "Password": "123456",
+      "phone": "+917381779419",
+      "Address": "At/po-Taradapada , Jagatsinghpur, Odisha"
     }
   ]
 }
